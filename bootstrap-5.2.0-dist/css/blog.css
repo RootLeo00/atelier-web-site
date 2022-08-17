@@ -1,11 +1,18 @@
 /* stylelint-disable selector-list-comma-newline-after */
+body{
+  background-image: url("/images/annie-spratt-zA7I5BtFbvw-unsplash.jpg");
+  background-color: #cccccc;
+}
+
 
 .blog-header {
   border-bottom: 1px solid #e5e5e5;
 }
 
 .blog-header-logo {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif
+    /*rtl:Amiri, Georgia, "Times New Roman", serif*/
+  ;
   font-size: 2.25rem;
 }
 
@@ -13,13 +20,21 @@
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif
+    /*rtl:Amiri, Georgia, "Times New Roman", serif*/
+  ;
 }
 
 .display-4 {
   font-size: 2.5rem;
 }
+
 @media (min-width: 768px) {
   .display-4 {
     font-size: 3rem;
@@ -30,9 +45,14 @@ h1, h2, h3, h4, h5, h6 {
   flex: 0 0 auto;
 }
 
-.h-250 { height: 250px; }
+.h-250 {
+  height: 250px;
+}
+
 @media (min-width: 768px) {
-  .h-md-250 { height: 250px; }
+  .h-md-250 {
+    height: 250px;
+  }
 }
 
 /* Pagination */
@@ -46,9 +66,11 @@ h1, h2, h3, h4, h5, h6 {
 .blog-post {
   margin-bottom: 4rem;
 }
+
 .blog-post-title {
   font-size: 2.5rem;
 }
+
 .blog-post-meta {
   margin-bottom: 1.25rem;
   color: #727272;
@@ -57,13 +79,54 @@ h1, h2, h3, h4, h5, h6 {
 /*
  * Footer
  */
-.blog-footer {
+#footer-placeholder {
+  clear: both;
+  position: relative;
+  margin-top: auto;
   padding: 2.5rem 0;
-  color: #727272;
   text-align: center;
-  background-color: #f9f9f9;
-  border-top: .05rem solid #e5e5e5;
+  position: absolute;
 }
-.blog-footer p:last-child {
+
+#footer-placeholder p:last-child {
   margin-bottom: 0;
 }
+
+
+p[name=signature] {
+  text-align: right;
+  font-size: 0.8rem;
+}
+
+article p {
+  text-align: justify;
+}
+
+blockquote {
+  text-align: justify;
+  font-style: italic;
+}
+
+#nav-placeholder nav{
+  background: #FAE8E0;
+  border: 5px solid #EF7C8E;
+}
+
+#vertical-nav-placeholder {
+  background: #FAE8E0;
+  border: 5px solid #EF7C8E;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  float: right;
+  margin: 0 0 0;
+  padding: 20px;
+  width: 178px;
+  outline: 0;
+  vertical-align: baseline;
+}
+
+#vertical-nav-placeholder a {
+  color: #666666;
+}
+
