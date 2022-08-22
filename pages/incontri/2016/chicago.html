@@ -25,11 +25,11 @@
         <!--Navigation bar-->
         <div id="nav-placeholder"></div>
         <div id="vertical-nav-placeholder"></div>
-
+        
         <script>
             $(function () {
                 $("#nav-placeholder").load("/layout/navbar.html");
-                $("#vertical-nav-placeholder").load("/pages/festa_della_lettura/vertical_navbar.html");
+                $("#vertical-nav-placeholder").load("/pages/incontri/2016/vertical_navbar.html");
                 $("#footer-placeholder").load("/layout/footer.html");
             });
         </script>
@@ -45,39 +45,322 @@
                             <p><a href="/static/invito_pennac.pdf">Invito</a> | <a
                                     href="/static/programma_pennac.pdf">Programma</a></p>
                             <p>
-                                Sabato 13 ottobre 2018
+                                Incontro del 27 Ottobre 2016 presso la Biblioteca di Pordenone.
+
+                                <!-- slideshow -->
+
+                                <style>
+                                    body {
+                                        font-family: Arial;
+                                        margin: 0;
+                                    }
+
+                                    * {
+                                        box-sizing: border-box;
+                                    }
+
+                                    img {
+                                        vertical-align: middle;
+                                    }
+
+                                    /* Position the image container (needed to position the left and right arrows) */
+                                    .container {
+                                        position: relative;
+                                    }
+
+                                    /* Hide the images by default */
+                                    .mySlides {
+                                        display: none;
+                                    }
+
+                                    /* Add a pointer when hovering over the thumbnail images */
+                                    .cursor {
+                                        cursor: pointer;
+                                    }
+
+                                    /* Next & previous buttons */
+                                    .prev,
+                                    .next {
+                                        cursor: pointer;
+                                        position: absolute;
+                                        top: 40%;
+                                        width: auto;
+                                        padding: 16px;
+                                        margin-top: -50px;
+                                        color: white;
+                                        font-weight: bold;
+                                        font-size: 20px;
+                                        border-radius: 0 3px 3px 0;
+                                        user-select: none;
+                                        -webkit-user-select: none;
+                                    }
+
+                                    /* Position the "next button" to the right */
+                                    .next {
+                                        right: 0;
+                                        border-radius: 3px 0 0 3px;
+                                    }
+
+                                    /* On hover, add a black background color with a little bit see-through */
+                                    .prev:hover,
+                                    .next:hover {
+                                        background-color: rgba(0, 0, 0, 0.8);
+                                    }
+
+                                    /* Number text (1/3 etc) */
+                                    .numbertext {
+                                        color: #f2f2f2;
+                                        font-size: 12px;
+                                        padding: 8px 12px;
+                                        position: absolute;
+                                        top: 0;
+                                    }
+
+                                    /* Container for image text */
+                                    .caption-container {
+                                        text-align: center;
+                                        background-color: #222;
+                                        padding: 2px 16px;
+                                        color: white;
+                                    }
+
+                                    .row:after {
+                                        content: "";
+                                        display: table;
+                                        clear: both;
+                                    }
+
+                                    /* Six columns side by side */
+                                    .column {
+                                        float: left;
+                                        width: 16.66%;
+                                    }
+
+                                    /* Add a transparency effect for thumnbail images */
+                                    .demo {
+                                        opacity: 0.6;
+                                    }
+
+                                    .active,
+                                    .demo:hover {
+                                        opacity: 1;
+                                    }
+                                </style>
+
+                            <h2 style="text-align:center">Slideshow Gallery</h2>
+
+                            <div class="container">
+                                <div class="mySlides">
+                                    <div class="numbertext">1 / 20</div>
+                                    <img src="/images/gallery/01_33d280m7.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">2 / 20</div>
+                                    <img src="/images/gallery/02_33d280m7.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">3 / 20</div>
+                                    <img src="/images/gallery/03_33d280m7.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">4 / 20</div>
+                                    <img src="/images/gallery/04_33d280m7.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">5 / 20</div>
+                                    <img src="/images/gallery/05_33d280m7.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">6 / 20</div>
+                                    <img src="/images/gallery/06_33d280m7.jpg" style="width:100%">
+                                </div>
+                                <div class="mySlides">
+                                    <div class="numbertext">7 / 20</div>
+                                    <img src="/images/gallery/07_33d280m7.jpg" style="width:100%">
+                                </div>
+                                <div class="mySlides">
+                                    <div class="numbertext">8 / 20</div>
+                                    <img src="/images/gallery/08_33d280m7.jpg" style="width:100%">
+                                </div>
+                                <div class="mySlides">
+                                    <div class="numbertext">9 / 20</div>
+                                    <img src="/images/gallery/09_33d280m7.jpg" style="width:100%">
+                                </div>
+                                <div class="mySlides">
+                                    <div class="numbertext">10 / 20</div>
+                                    <img src="/images/gallery/10_33d280m7.jpg" style="width:100%">
+                                </div>
+                                <div class="mySlides">
+                                    <div class="numbertext">11 / 20</div>
+                                    <img src="/images/gallery/11_33d280m7.jpg" style="width:100%">
+                                </div>
+                                <div class="mySlides">
+                                    <div class="numbertext">12 / 20</div>
+                                    <img src="/images/gallery/12_33d280m7.jpg" style="width:100%">
+                                </div>
+                                <div class="mySlides">
+                                    <div class="numbertext">13 / 20</div>
+                                    <img src="/images/gallery/13_33d280m7.jpg" style="width:100%">
+                                </div>
+                                <div class="mySlides">
+                                    <div class="numbertext">14 / 20</div>
+                                    <img src="/images/gallery/14_33d280m7.jpg" style="width:100%">
+                                </div>
+                                <div class="mySlides">
+                                    <div class="numbertext">15 / 20</div>
+                                    <img src="/images/gallery/15_33d280m7.jpg" style="width:100%">
+                                </div>
+                                <div class="mySlides">
+                                    <div class="numbertext">16 / 20</div>
+                                    <img src="/images/gallery/16_33d280m7.jpg" style="width:100%">
+                                </div>
+                                <div class="mySlides">
+                                    <div class="numbertext">17 / 20</div>
+                                    <img src="/images/gallery/17_33d280m7.jpg" style="width:100%">
+                                </div>
+                                <div class="mySlides">
+                                    <div class="numbertext">18 / 20</div>
+                                    <img src="/images/gallery/18_33d280m7.jpg" style="width:100%">
+                                </div>
+                                <div class="mySlides">
+                                    <div class="numbertext">19 / 20</div>
+                                    <img src="/images/gallery/19_33d280m7.jpg" style="width:100%">
+                                </div>
+                                <div class="mySlides">
+                                    <div class="numbertext">20 / 20</div>
+                                    <img src="/images/gallery/20_33d280m7.jpg" style="width:100%">
+                                </div>
+
+                                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                                <div class="caption-container">
+                                    <p id="caption"></p>
+                                </div>
+
+                                <div class="row">
+                                    <div class="column">
+                                        <img class="demo cursor" src="/images/gallery/01_33d280m7.jpg" style="width:100%"
+                                            onclick="currentSlide(1)">
+                                    </div>
+                                    <div class="column">
+                                        <img class="demo cursor" src="/images/gallery/02_33d280m7.jpg" style="width:100%"
+                                            onclick="currentSlide(2)" >
+                                    </div>
+                                    <div class="column">
+                                        <img class="demo cursor" src="/images/gallery/03_33d280m7.jpg" style="width:100%"
+                                            onclick="currentSlide(3)" >
+                                    </div>
+                                    <div class="column">
+                                        <img class="demo cursor" src="/images/gallery/04_33d280m7.jpg" style="width:100%"
+                                            onclick="currentSlide(4)" >
+                                    </div>
+                                    <div class="column">
+                                        <img class="demo cursor" src="/images/gallery/05_33d280m7.jpg" style="width:100%"
+                                            onclick="currentSlide(5)" >
+                                    </div>
+                                    <div class="column">
+                                        <img class="demo cursor" src="/images/gallery/06_33d280m7.jpg" style="width:100%"
+                                            onclick="currentSlide(6)" >
+                                    </div>
+                                    <div class="column">
+                                        <img class="demo cursor" src="/images/gallery/07_thumb_33d280m7.png" style="width:100%"
+                                            onclick="currentSlide(7)" >
+                                    </div>
+                                    <div class="column">
+                                        <img class="demo cursor" src="/images/gallery/08_thumb_33d280m7.png" style="width:100%"
+                                            onclick="currentSlide(8)" >
+                                    </div>
+                                    <div class="column">
+                                        <img class="demo cursor" src="/images/gallery/09_thumb_33d280m7.png" style="width:100%"
+                                            onclick="currentSlide(9)" >
+                                    </div>
+                                    <div class="column">
+                                        <img class="demo cursor" src="/images/gallery/10_thumb_33d280m7.png" style="width:100%"
+                                            onclick="currentSlide(10)" >
+                                    </div>
+                                    <div class="column">
+                                        <img class="demo cursor" src="/images/gallery/11_thumb_33d280m7.png" style="width:100%"
+                                            onclick="currentSlide(11)" >
+                                    </div>
+                                    <div class="column">
+                                        <img class="demo cursor" src="/images/gallery/12_5rs3xpxv.jpg" style="width:100%"
+                                            onclick="currentSlide(12)" >
+                                    </div>
+                                    <div class="column">
+                                        <img class="demo cursor" src="/images/gallery/13_cc7z1u6e.jpg" style="width:100%"
+                                            onclick="currentSlide(13)" >
+                                    </div>
+                                    <div class="column">
+                                        <img class="demo cursor" src="/images/gallery/14_w18o4mdn.jpg" style="width:100%"
+                                            onclick="currentSlide(14)" >
+                                    </div>
+                                    <div class="column">
+                                        <img class="demo cursor" src="/images/gallery/15_2i900ey8.jpg" style="width:100%"
+                                            onclick="currentSlide(15)" >
+                                    </div>
+                                    <div class="column">
+                                        <img class="demo cursor" src="/images/gallery/16_z79c96g8.jpg" style="width:100%"
+                                            onclick="currentSlide(16)" >
+                                    </div>
+                                    <div class="column">
+                                        <img class="demo cursor" src="/images/gallery/17_61xd81pw.jpg" style="width:100%"
+                                            onclick="currentSlide(17)" >
+                                    </div>
+                                    <div class="column">
+                                        <img class="demo cursor" src="/images/gallery/18_bj0ri832.jpg" style="width:100%"
+                                            onclick="currentSlide(18)" >
+                                    </div>
+                                    <div class="column">
+                                        <img class="demo cursor" src="/images/gallery/19_77zrg372.jpg" style="width:100%"
+                                            onclick="currentSlide(19)" >
+                                    </div>
+                                    <div class="column">
+                                        <img class="demo cursor" src="/images/gallery/20_77zrg372.jpg" style="width:100%"
+                                            onclick="currentSlide(20)" >
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <script>
+                                let slideIndex = 1;
+                                showSlides(slideIndex);
+
+                                function plusSlides(n) {
+                                    showSlides(slideIndex += n);
+                                }
+
+                                function currentSlide(n) {
+                                    showSlides(slideIndex = n);
+                                }
+
+                                function showSlides(n) {
+                                    let i;
+                                    let slides = document.getElementsByClassName("mySlides");
+                                    let dots = document.getElementsByClassName("demo");
+                                    let captionText = document.getElementById("caption");
+                                    if (n > slides.length) { slideIndex = 1 }
+                                    if (n < 1) { slideIndex = slides.length }
+                                    for (i = 0; i < slides.length; i++) {
+                                        slides[i].style.display = "none";
+                                    }
+                                    for (i = 0; i < dots.length; i++) {
+                                        dots[i].className = dots[i].className.replace(" active", "");
+                                    }
+                                    slides[slideIndex - 1].style.display = "block";
+                                    dots[slideIndex - 1].className += " active";
+                                    captionText.innerHTML = dots[slideIndex - 1].alt;
+                                }
+                            </script>
+
                             </p>
-                            <p>
-                                Si stanno susseguendo gli incontri con i gruppi di lettura, presso la Biblioteca Civica
-                                di San Vito al Tagliamento, per organizzare e definire i dettagli della festa che
-                                vedranno impegnati nella performance il gruppo di Pasiano, al cui interno è presente
-                                anche l’Assessore alla cultura dott.ssa Tiziana De Bortoli, il folto gruppo di Cordovado
-                                e gli ospitanti sanvitesi.All’incontro del 4 settembre seguirà quello del 18 settembre.
-                            </p>
-                            <p>
-                                Non tutti i dettagli sono definiti, ma alcune anticipazioni possiamo fornirle.
-                            </p>
-                            <p>
-                                Nell’arco della Festa, dislocati in diversi spazi, all’interno della biblioteca, saranno
-                                presenti i lettori che daranno testimonianza della loro passione per la lettura, con
-                                brevi citazioni.Ci sarà una contesa tra libri in dialogo, Don Chisciotte della Mancia,
-                                romanzo spagnolo di Miguel de Cervantes Saavedra, pubblicato in due volumi, nel 1605 e
-                                1615, e Il barone rampante, un romanzo di Italo Calvino scritto nel 1957.
-                            </p>
-                            <p>
-                                Il gruppo dell’Atelier di lettura porterà in dono alla Festa, fresco di stampa, una
-                                nuova pubblicazione: Almanacco. Inverno-Primavera.
-                            </p>
-                            <p>
-                                L’intermezzo musicale vedrà impegnato l’Ensemble di flauti a cura della Filarmonica
-                                Sanvitese, diretto dal M.o Giulia Poser.
-                            </p>
-                            <p>
-                                Sottolineiamo che l’iniziativa, è frutto di sinergie e di convinta collaborazione, tra
-                                l’Atelier di lettura, i gruppi di lettura delle biblioteche del Sistema bibliotecario
-                                Tagliamento Sile e della responsabile della Biblioteca Civica di San Vito, dott.ssa
-                                Monica Beltrame.
-                            </p>
+
                             <p name="signature">
                                 Per l’Atelier di lettura<br>
                                 Lorella Fiorot
