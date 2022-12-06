@@ -1,1 +1,1 @@
-refactoring of www.atelierdilettura.it that was previously made by autogenerator
+refactoring of www.atelierdilettura.it that is made by autogenerator
