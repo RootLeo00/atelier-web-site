@@ -32,7 +32,7 @@ import { CATERINA } from "./_BLOG_SETUP";
  */
 
 // clear this article list and add your own
-const ARTICLES_LIST: iArticle[] = [
+const BOOKS_LIST: iArticle[] = [
   {
     path: "/pages/books/io-sono-achille.tsx",
     featureArticle: true,
@@ -57,7 +57,7 @@ const ARTICLES_LIST: iArticle[] = [
 
 ];
 
-export const SORTED_ARTICLES_BY_DATE = ARTICLES_LIST.sort((a, b) =>
+export const SORTED_BOOKS_BY_DATE = BOOKS_LIST.sort((a, b) =>
   new Date(a.preview.date) > new Date(b.preview.date) ? -1 : 1
 );
 
